@@ -1,0 +1,110 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+main {
+    width: 80%;
+    margin: 0 auto;
+}
+.app {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
+}
+.app h1 {
+    width: 100%;
+    color: darkslategrey;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 10px 0;
+    background-color: #e9e9e9;
+}
+.app .inputs {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.app .inputs input, textarea, select {
+    height: 40px;
+    width: 100%;
+    font-size: 16px;
+    color: darkslategrey;
+    padding: 5px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid steelblue;
+}
+.app .inputs button {
+    width: 100%;
+    font-size: 16px;
+    color: #fff;
+    text-transform: capitalize;
+    padding: 10px 0;
+    border: none;
+    border-radius: 5px;
+    background-color: steelblue;
+    cursor: pointer;
+}
+.app table {
+    width: 70%;
+    table-layout: auto;
+}
+.app table thead tr th {
+    text-align: center;
+    color: #fff;
+    padding: 5px;
+    background-color: steelblue;
+    text-transform: uppercase;
+}
+.app table tbody tr td {
+    text-align: center;
+    color: #333;
+    padding: 5px;
+    text-transform: capitalize;
+    border-bottom: 1px solid steelblue;
+    transition: all 0.2s;
+}
+.app table tbody tr td:hover {
+    color: #fff;
+    background-color: steelblue;
+}
+@media (max-width: 900px) {
+    main {
+        width: 100vw;
+    }
+    .app .inputs button {
+        padding: 5px 0;
+    }
+    .app .inputs{
+        width: 90%;
+    }
+    .app table {
+        width: 90%;
+    }
+    .app  table thead tr th {
+        padding: 5px;
+        text-transform: capitalize;
+    }
+    table thead tr th:nth-child(3) {
+        display: none;
+    }
+    table tbody tr td:nth-child(3) {
+        display: none;
+    }
+    table thead tr th:nth-child(4) {
+        display: none;
+    }
+    table tbody tr td:nth-child(4) {
+        display: none;
+    }
+}
